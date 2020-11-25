@@ -7,7 +7,7 @@ body {
 	font-size: 1.2rem;
 	letter-spacing: 0.07rem;
 	line-height: 2;
-	padding: 0rem 2rem 0rem 2rem;
+	padding: 0rem 6rem 0rem 6rem;
 	-webkit-text-size-adjust: 200%;
 }
 h1 {
@@ -40,9 +40,7 @@ section {
 	letter-spacing: 0.05rem;
 	line-height: 1.5;
 }
-article {
-	margin: 2rem 0rem 2rem 0rem;
-}
+
 a {
 	text-decoration: none;
 	color: hsl(200,50%,30%);
@@ -51,12 +49,12 @@ a {
 a:hover {
   color: hsl(37,100%,42%);
 }
+article {
+	margin: 5rem 0rem 0rem 0rem;
+}
 footer {
   text-align: center;
 	margin: 3em;
-}
-img[src="./images/dna-icon-small.png"] {
-	width: 100px;
 }
 img[src="./images/profile.jpg"] {
 	width: 100%;
@@ -124,9 +122,8 @@ img[src="./images/profile.jpg"] {
 	background-color: hsla(0, 0%, 0%, 0.5);
 }
 .header-container {
-  display: grid;
-  grid-template: auto / 12rem auto;
-  margin: 0rem;
+	display: grid;
+	grid-template: auto / auto auto;
 }
 .header-item-1 {
 	grid-area: 1 / 1 / 2 / 2;
@@ -135,119 +132,118 @@ img[src="./images/profile.jpg"] {
 	grid-area: 1 / 2 / 2 / 3;
 }
 .nav-container {
-  grid-area: 1 / 2 / 2 / 3;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-end;
-	grid-template-rows: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: right;
 }
 .nav-item {
   padding: 0rem 0rem 1.5rem 2rem;
 	margin: 0rem;
-	float: right;
 	text-align: right;
-}
-.skill-grid {
-	display: grid;
-	grid-template: 1fr 1fr 1fr / 15rem;
-	justify-content: left;
-}
-.skill-item-1 {
-	grid-area: 1 / 1 / 2 / 2;
-	padding: 0rem 1rem 0rem 2rem;
-	margin: 0rem 0rem 1rem 0rem;
-}
-.skill-item-2 {
-	grid-area: 2 / 1 / 3 / 2;
-	padding: 0rem 1rem 0rem 2rem;
-	margin: 0.5rem 0rem 0.5rem 0rem;
-}
-.skill-item-3 {
-	grid-area: 3 / 1 / 4 / 2;
-	padding: 0rem 1rem 0rem 2rem;
-	margin: 1rem 0rem 0rem 0rem;
 }
 .footer-grid {
 	display: grid;
-	grid-template: auto auto auto / auto;
-	justify-content: center;
+	grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+	justify-content: space-between;
 }
 .footer-item-1 {
-	grid-area: 2 / 1 / 3 / 2;
+	grid-area: 1 / 1 / 2 / 2;
 	text-align: center;
 }
 .footer-item-2 {
-	grid-area: 1 / 1 / 2 / 2;
+	grid-area: 1 / 2 / 2 / 3;
 	text-align: center;
-	margin: 1rem 1rem 1rem 1rem;
 }
 .footer-item-3 {
-	grid-area: 3 / 1 / 4 / 2;
+	grid-area: 1 / 3 / 2 / 4;
 	text-align: center;
-	margin: 1rem 1rem 1rem 1rem;
 }
 .footer-item-4 {
-	grid-area: 5 / 1 / 6 / 2;
+	grid-area: 1 / 4 / 2 / 5;
 	text-align: center;
-	margin: 1rem 1rem 1rem 1rem;
 }
 .footer-item-5 {
-	grid-area: 4 / 1 / 5 / 2;
+	grid-area: 1 / 5 / 2 / 6;
 	text-align: center;
 }
 .home-grid {
 	display: grid;
-	grid-template: auto auto auto / auto auto;
+	grid-template: auto auto / 15rem auto 15rem;
+	justify-content: space-between;
 }
 .home-item-1 {
-	grid-area: 3 / 1 / 4 / 2;
+	grid-area: 1 / 1 / 3 / 2;
 	text-align: center;
 }
 .home-item-2 {
-	grid-area: 1 / 1 / 2 / 3;
-	text-align: center;
+	grid-area: 1 / 2 / 2 / 3;
 }
 .home-item-3 {
-	grid-area: 2 / 1 / 3 / 3;
+	grid-area: 2 / 2 / 3 / 3;
 	text-align: center;
+	max-width: 60rem;
 }
 .home-item-4 {
-	grid-area: 3 / 2 / 4 / 3;
-	text-align: left;
+	grid-area: 1 / 3 / 3 / 4;
+}
+.skill-grid {
+	display: grid;
+	grid-template: 10rem 10rem 10rem / auto;
+	justify-content: right;
+	align-content: space-between;
+}
+.skill-item-1 {
+	grid-area: 1 / 1 / 2 / 2;
+	padding: 0rem 1rem 0rem 1rem;
+	margin: 0rem 0rem 2rem 0rem;
+}
+.skill-item-2 {
+	grid-area: 2 / 1 / 3 / 2;
+	padding: 0rem 1rem 0rem 1rem;
+	margin: 0rem 0rem 2rem 0rem;
+}
+.skill-item-3 {
+	grid-area: 3 / 1 / 4 / 2;
+	padding: 0rem 1rem 0rem 1rem;
+	margin: 0rem 0rem 2rem 0rem;
 }
 .about-grid {
 	display: grid;
-	grid-template: auto auto auto auto / 100%;
+	grid-template: auto auto auto / 35% 500px;
 	justify-content: center;
 }
 .about-item-1 {
-	grid-area: 1 / 1 / 2 / 2;
-	margin: 0rem;
+	grid-area: 1 / 1 / 2 / 3;
+	margin: 4rem 0rem 0rem 0rem;
 }
 .about-item-2 {
-	grid-area: 2 / 1 / 3 / 2;
+	grid-area: 2 / 1 / 3 / 3;
 	text-align: center;
 }
 .about-item-3 {
 	grid-area: 3 / 1 / 4 / 2;
 }
 .about-item-4 {
-	grid-area: 4 / 1 / 5 / 2;
+	grid-area: 3 / 2 / 4 / 3;
 	text-align: center;
-	padding: 2rem;
+}
+img[src="./images/dna-icon-small.png"] {
+	width: 120px;
 }
 @media only screen and (min-width: 1000px) and (max-width: 1350px){
+	body {
+		padding: 0rem 2rem 0rem 2rem;
+	}
 	article {
 		margin: 2rem;
 	}
 	.header-container {
-	  display: grid;
 	  grid-template: auto / 12rem auto;
 	  margin: 0rem 2rem 0rem 2rem;
 	}
 	.nav-container {
-	  grid-area: 1 / 2 / 2 / 3;
 	  display: flex;
 	  flex-wrap: wrap;
 	  flex-direction: column;
@@ -308,9 +304,12 @@ img[src="./images/profile.jpg"] {
 	}
 	.skill-item-2 {
 		grid-area: 1 / 2 / 2 / 3;
+		margin: 0rem 1rem 0rem 1rem;
 	}
 	.skill-item-3 {
 		grid-area: 1 / 3 / 2 / 4;
+		margin: 0rem 0rem 0rem 2rem;
+
 	}
 	.about-grid {
 		display: grid;
@@ -336,107 +335,115 @@ img[src="./images/profile.jpg"] {
 		width: 120px;
 	}
 }
-@media only screen and (min-width: 1350px){
+@media only screen and (max-width: 999px){
+	body {
+		padding: 0rem 1rem 0rem 1rem;
+	}
 	article {
-		margin: 2rem;
+		margin: 2rem 0rem 2rem 0rem;
 	}
 	.header-container {
-		grid-template: auto / auto auto;
-		margin: 0rem 2rem 5rem 2rem;
+	  display: grid;
+	  grid-template: auto / 12rem auto;
+	  margin: 0rem;
 	}
 	.nav-container {
 	  grid-area: 1 / 2 / 2 / 3;
 	  display: flex;
 	  flex-wrap: wrap;
-	  flex-direction: row;
-	  justify-content: flex-end;
-		align-content: center;
+	  flex-direction: column;
+	  align-items: flex-end;
 		grid-template-rows: 1rem;
 	}
 	.footer-grid {
 		display: grid;
-		grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
-		justify-content: space-between;
+		grid-template: auto auto auto / auto;
+		justify-content: center;
 	}
 	.footer-item-1 {
-		grid-area: 1 / 1 / 2 / 2;
+		grid-area: 2 / 1 / 3 / 2;
 		text-align: center;
 	}
 	.footer-item-2 {
-		grid-area: 1 / 2 / 2 / 3;
+		grid-area: 1 / 1 / 2 / 2;
 		text-align: center;
+		margin: 1rem 1rem 1rem 1rem;
 	}
 	.footer-item-3 {
-		grid-area: 1 / 3 / 2 / 4;
+		grid-area: 3 / 1 / 4 / 2;
 		text-align: center;
+		margin: 1rem 1rem 1rem 1rem;
 	}
 	.footer-item-4 {
-		grid-area: 1 / 4 / 2 / 5;
+		grid-area: 5 / 1 / 6 / 2;
 		text-align: center;
+		margin: 1rem 1rem 1rem 1rem;
 	}
 	.footer-item-5 {
-		grid-area: 1 / 5 / 2 / 6;
+		grid-area: 4 / 1 / 5 / 2;
 		text-align: center;
 	}
 	.home-grid {
 		display: grid;
-		grid-template: auto auto / 20rem auto 20rem;
+		grid-template: auto auto auto / auto auto;
 	}
 	.home-item-1 {
-		grid-area: 1 / 1 / 3 / 2;
+		grid-area: 3 / 1 / 4 / 2;
 	}
 	.home-item-2 {
-		grid-area: 1 / 2 / 2 / 3;
+		grid-area: 1 / 1 / 2 / 3;
+		text-align: center;
 	}
 	.home-item-3 {
-		grid-area: 2 / 2 / 3 / 3;
+		grid-area: 2 / 1 / 3 / 3;
 		text-align: center;
 	}
 	.home-item-4 {
-		grid-area: 1 / 3 / 3 / 4;
+		grid-area: 3 / 2 / 4 / 3;
+		text-align: left;
 	}
 	.skill-grid {
 		display: grid;
-		grid-template: 10rem 10rem 10rem / auto;
-		justify-content: right;
-		align-content: space-between;
+		grid-template: 1fr 1fr 1fr / 15rem;
+		justify-content: left;
 	}
 	.skill-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
-		padding: 0rem 1rem 0rem 1rem;
-		margin: 0rem 0rem 2rem 0rem;
+		padding: 0rem 1rem 0rem 2rem;
+		margin: 0rem 0rem 1rem 0rem;
 	}
 	.skill-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
-		padding: 0rem 1rem 0rem 1rem;
-		margin: 0rem 0rem 2rem 0rem;
+		padding: 0rem 1rem 0rem 2rem;
+		margin: 0.5rem 0rem 0.5rem 0rem;
 	}
 	.skill-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
-		padding: 0rem 1rem 0rem 1rem;
-		margin: 0rem 0rem 2rem 0rem;
+		padding: 0rem 1rem 0rem 2rem;
+		margin: 1rem 0rem 0rem 0rem;
 	}
 	.about-grid {
 		display: grid;
-		grid-template: auto auto auto / 35% 500px;
+		grid-template: auto auto auto auto / 100%;
 		justify-content: center;
 	}
 	.about-item-1 {
-		grid-area: 1 / 1 / 2 / 3;
-		margin: 4rem 0rem 0rem 0rem;
+		grid-area: 1 / 1 / 2 / 2;
+		margin: 0rem;
 	}
 	.about-item-2 {
-		grid-area: 2 / 1 / 3 / 3;
+		grid-area: 2 / 1 / 3 / 2;
 		text-align: center;
 	}
 	.about-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
 	}
 	.about-item-4 {
-		grid-area: 3 / 2 / 4 / 3;
+		grid-area: 4 / 1 / 5 / 2;
 		text-align: center;
+		padding: 2rem;
 	}
 	img[src="./images/dna-icon-small.png"] {
-		width: 120px;
+		width: 100px;
 	}
 }
