@@ -8,6 +8,7 @@ body {
 	letter-spacing: 0.07rem;
 	line-height: 2;
 	padding: 0rem 1rem 0rem 1rem;
+	-webkit-text-size-adjust: none;
 }
 h1 {
 	font-family: 'Ubuntu', sans-serif;
