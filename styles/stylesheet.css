@@ -149,11 +149,9 @@ img[src='./images/profile.jpg'] {
 }
 .header-item-1 {
 	grid-area: 1 / 1 / 2 / 2;
-	border: 1px solid white;
 }
 .header-item-2 {
 	grid-area: 1 / 2 / 2 / 3;
-	border: 1px solid white;
 }
 .nav-container {
 	display: flex;
