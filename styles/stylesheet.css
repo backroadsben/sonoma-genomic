@@ -60,27 +60,27 @@ img[src='./images/profile.jpg'] {
 }
 .home-background {
 	background-image: url('../images/home-background.jpg');
-	background-size: cover;
+	background-size: auto;
 	background-attachment: fixed;
 	background-position: center top;
 }
 .about-background {
 	background-image: url('../images/about-background.jpg');
-	background-size: cover;
+	background-size: auto;
 	background-attachment: fixed;
 	background-position: center top;
 }
 .writing-background {
 	background-image: url('../images/writing-background.jpg');
-	background-size: cover;
+	background-size: auto;
 	background-attachment: fixed;
 	background-position: right top;
 }
 .testimonials-background {
 	background-image: url('../images/testimonials-background.jpg');
-	background-size: cover;
+	background-size: auto;
 	background-attachment: fixed;
-	background-position: right top;
+	background-position: left top;
 }
 .hidden {
 	position: relative;
