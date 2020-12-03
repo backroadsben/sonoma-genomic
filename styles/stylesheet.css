@@ -52,7 +52,7 @@ a:hover {
 }
 img[src='./images/profile.jpg'] {
 	width: 100%;
-	max-width: 120px;
+	max-width: 500px;
 }
 .home-background {
 	background-image: url('../images/home-background.jpg');
