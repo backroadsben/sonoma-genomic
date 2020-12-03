@@ -619,6 +619,6 @@ img[src='./images/dna-icon-small.png'] {
 		background-attachment: scroll;
 	}
 	img[src='./images/dna-icon-small.png'] {
-		width: 0%;
+		width: 100%;
 	}
 }
