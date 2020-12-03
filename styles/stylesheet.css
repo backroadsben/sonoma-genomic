@@ -452,12 +452,6 @@ img[src='./images/dna-icon-small.png'] {
 	footer {
 		padding: 2rem 1rem 0rem 1rem;
 	}
-	h1 {
-		font-size: 0.8rem;
-	}
-	.large {
-		font-size: 1rem;
-	}
 	.header-container {
 	  display: grid;
 	  grid-template: auto / auto auto;
