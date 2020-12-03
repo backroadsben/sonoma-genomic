@@ -500,7 +500,7 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.home-grid {
 		display: grid;
-		grid-template: auto auto auto auto / 1fr 2fr;
+		grid-template: auto auto auto auto / auto auto;
 		justify-content: center;
 	}
 	.home-item-1 {
@@ -629,6 +629,6 @@ img[src='./images/dna-icon-small.png'] {
 		background-attachment: scroll;
 	}
 	img[src='./images/dna-icon-small.png'] {
-		max-width: 80px;
+		max-width: 120px;
 	}
 }
