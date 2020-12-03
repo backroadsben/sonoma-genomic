@@ -294,7 +294,7 @@ img[src='./images/profile.jpg'] {
 	padding: 0rem 0rem 2rem 0rem;
 }
 img[src='./images/dna-icon-small.png'] {
-	width: 120px;
+	max-width: 120px;
 }
 .nav-container label, #hamburger {
 	display: none;
@@ -627,8 +627,5 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.testimonials-background {
 		background-attachment: scroll;
-	}
-	img[src='./images/dna-icon-small.png'] {
-		width: 100px;
 	}
 }
