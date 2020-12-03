@@ -133,7 +133,7 @@ img[src='./images/profile.jpg'] {
 	font-family: 'Work Sans',sans-serif;
 	color: hsl(200,50%,30%);
 }
-.large {
+.logo {
 	font-size: 1.2rem;
 }
 .header-container {
@@ -450,6 +450,9 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	h1 {
 		font-size: 0.8rem;
+	}
+	.logo {
+		font-size: 1rem;
 	}
 	.header-container {
 	  display: grid;
