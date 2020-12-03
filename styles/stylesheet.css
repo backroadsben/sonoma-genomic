@@ -7,7 +7,16 @@ body {
 	font-size: 1.2rem;
 	letter-spacing: 0.07rem;
 	line-height: 1.8;
+}
+header {
 	padding: 0rem 6rem 0rem 6rem;
+}
+article {
+	padding: 4rem 6rem 4rem 6rem;
+}
+footer {
+  text-align: center;
+	padding: 0rem 6rem 6rem 6rem;
 }
 h1 {
 	font-family: 'Ubuntu', sans-serif;
@@ -23,7 +32,6 @@ h2 {
 	letter-spacing: 0.1rem;
 	line-height: 2rem;
 	text-align: center;
-	color: hsl(200,0%,0%);
 }
 h3 {
 	color: hsl(0,0%,100%);
@@ -46,13 +54,6 @@ a {
 }
 a:hover {
   color: hsl(37,100%,42%);
-}
-article {
-	margin: 4rem 0rem 0rem 0rem;
-}
-footer {
-  text-align: center;
-	margin: 3em;
 }
 img[src='./images/profile.jpg'] {
 	width: 100%;
@@ -127,6 +128,7 @@ img[src='./images/profile.jpg'] {
 	padding: 0.3rem 1rem 0.3rem 1rem;
 	margin: 0rem 2rem 0rem 2rem;
 	height: 3rem;
+	background-color: hsla(0, 0%, 0%, 0.5);
 	transition: background-color 0.2s;
 }
 .button:hover {
@@ -137,11 +139,7 @@ img[src='./images/profile.jpg'] {
 	color: hsl(200,50%,30%);
 }
 .large {
-	font-size: 1.2rem;
-	letter-spacing: 0.1rem;
-}
-.dark {
-	background-color: hsla(0, 0%, 0%, 0.5);
+	font-size: 1.1rem;
 }
 .header-container {
 	display: grid;
@@ -200,11 +198,10 @@ img[src='./images/profile.jpg'] {
 .home-item-1 {
 	grid-area: 1 / 1 / 4 / 2;
 	text-align: center;
-	margin: 0rem;
 }
 .home-item-2 {
 	grid-area: 1 / 2 / 2 / 3;
-	padding: 4rem 0rem 0rem 0rem;
+	padding: 4rem 0rem 4rem 0rem;
 }
 .home-item-3 {
 	grid-area: 2 / 2 / 3 / 3;
@@ -228,62 +225,73 @@ img[src='./images/profile.jpg'] {
 	grid-area: 1 / 1 / 2 / 2;
 	padding: 0rem 1rem 0rem 1rem;
 	margin: 0rem 0rem 2rem 0rem;
+	background-color: hsla(0, 0%, 0%, 0.5);
 }
 .skill-item-2 {
 	grid-area: 2 / 1 / 3 / 2;
 	padding: 0rem 1rem 0rem 1rem;
 	margin: 0rem 0rem 2rem 0rem;
+	background-color: hsla(0, 0%, 0%, 0.5);
 }
 .skill-item-3 {
 	grid-area: 3 / 1 / 4 / 2;
 	padding: 0rem 1rem 0rem 1rem;
 	margin: 0rem 0rem 2rem 0rem;
+	background-color: hsla(0, 0%, 0%, 0.5);
 }
 .about-grid {
 	display: grid;
-	grid-template: auto auto / 35% 500px;
+	grid-template: auto auto auto / 35% 500px;
 	justify-content: center;
 }
 .about-item-1 {
 	grid-area: 1 / 1 / 2 / 3;
-	margin: 4rem 0rem 0rem 0rem;
+	margin: 4rem 0rem 4rem 0rem;
 }
 .about-item-2 {
-	grid-area: 2 / 1 / 3 / 2;
+	grid-area: 2 / 1 / 3 / 3;
 }
 .about-item-3 {
-	grid-area: 2 / 2 / 3 / 3;
+	grid-area: 3 / 1 / 4 / 2;
+}
+.about-item-4 {
+	grid-area: 3 / 2 / 4 / 3;
 	text-align: center;
 	margin: 2rem 0rem 0rem 2rem;
 }
 .writing-grid {
 	display: grid;
-	grid-template: auto auto / 1fr 1fr;
+	grid-template: auto auto auto / 1fr 1fr;
 }
 .writing-item-1 {
-	grid-area: 1 / 1 / 2 / 2;
+	grid-area: 1 / 1 / 2 / 3;
+	padding: 4rem 0rem 4rem 0rem;
 }
 .writing-item-2 {
 	grid-area: 2 / 1 / 3 / 2;
 }
 .writing-item-3 {
-	grid-area: 1 / 2 / 3 / 3;
+	grid-area: 3 / 1 / 4 / 2;
 }
 .testimonials-grid {
 	display: grid;
-	grid-template: auto auto auto / 2fr 1fr 3fr 3fr 2fr 2fr;
+	grid-template: auto auto auto auto / 2fr 1fr 3fr 3fr 2fr 2fr;
 }
 .testimonials-item-1 {
-	grid-area: 1 / 1 / 2 / 4;
-	padding: 0rem 0rem 3rem 0rem;
+	grid-area: 1 / 1 / 2 / 7;
+	padding: 4rem 0rem 4rem 0rem;
 }
 .testimonials-item-2 {
-	grid-area: 2 / 2 / 3 / 5;
-	padding: 0rem 0rem 3rem 0rem;
+	grid-area: 2 / 1 / 3 / 4;
+	padding: 0rem 0rem 2rem 0rem;
 }
 .testimonials-item-3 {
-	grid-area: 3 / 3 / 4 / 6;
-	padding: 0rem 0rem 3rem 0rem;
+	grid-area: 3 / 2 / 4 / 5;
+	padding: 0rem 0rem 2rem 0rem;
+}
+.testimonials-item-4 {
+	grid-area: 4 / 3 / 5 / 6;
+	padding: 0rem 0rem 2rem 0rem;
 }
 img[src='./images/dna-icon-small.png'] {
 	width: 120px;
@@ -292,11 +300,14 @@ img[src='./images/dna-icon-small.png'] {
 	display: none;
 }
 @media only screen and (min-width: 1000px) and (max-width: 1350px){
-	body {
+	header {
 		padding: 0rem 4rem 0rem 4rem;
 	}
 	article {
-		margin: 0rem;
+		padding: 0rem 4rem 4rem 4rem;
+	}
+	footer {
+		padding: 0rem 4rem 0rem 4rem;
 	}
 	.header-container {
 	  grid-template: auto / auto auto;
@@ -336,12 +347,11 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.home-item-1 {
 		grid-area: 1 / 1 / 5 / 2;
-		margin: 0rem;
 	}
 	.home-item-2 {
 		grid-area: 1 / 2 / 2 / 3;
 		text-align: center;
-		padding: 0rem 0rem 2rem 0rem;
+		padding: 2rem 0rem 2rem 0rem;
 	}
 	.home-item-3 {
 		grid-area: 2 / 2 / 3 / 3;
@@ -360,68 +370,83 @@ img[src='./images/dna-icon-small.png'] {
 	.skill-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
 		margin: 0rem 2rem 0rem 0rem;
+		background-color: hsla(0, 0%, 0%, 0.5);
 	}
 	.skill-item-2 {
 		grid-area: 1 / 2 / 2 / 3;
 		margin: 0rem 1rem 0rem 1rem;
+		background-color: hsla(0, 0%, 0%, 0.5);
 	}
 	.skill-item-3 {
 		grid-area: 1 / 3 / 2 / 4;
 		margin: 0rem 0rem 0rem 2rem;
+		background-color: hsla(0, 0%, 0%, 0.5);
 	}
 	.about-grid {
 		display: grid;
-		grid-template: auto auto auto / 70%;
+		grid-template: auto auto auto auto / 70%;
 		justify-content: right;
 	}
 	.about-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
-		margin: 2rem 0rem 0rem 0rem;
+		margin: 2rem 0rem 2rem 0rem;
 	}
 	.about-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
 	}
 	.about-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
+	}
+	.about-item-4 {
+		grid-area: 4 / 1 / 5 / 2;
 		text-align: left;
 		margin: 0rem;
 	}
 	.writing-grid {
 		display: grid;
-		grid-template: auto auto / 3fr 2fr;
+		grid-template: auto auto auto / 3fr 2fr;
 	}
 	.writing-item-1 {
-		grid-area: 1 / 1 / 2 / 2;
+		grid-area: 1 / 1 / 2 / 3;
+		padding: 2rem 0rem 2rem 0rem;
 	}
 	.writing-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
 	}
 	.writing-item-3 {
-		grid-area: 1 / 2 / 3 / 3;
+		grid-area: 3 / 1 / 4 / 2;
 	}
 	.testimonials-grid {
 		display: grid;
-		grid-template: auto auto auto / 2fr 1fr;
+		grid-template: auto auto auto auto / 2fr 1fr;
 	}
 	.testimonials-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
-		padding: 0rem;
+		padding: 2rem 0rem 2rem 0rem;
 	}
 	.testimonials-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
-		padding: 0rem;
+		padding: 0rem 0rem 1rem 0rem;
 	}
 	.testimonials-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
-		padding: 0rem;
+		padding: 0rem 0rem 1rem 0rem;
+	}
+	.testimonials-item-4 {
+		grid-area: 4 / 1 / 5 / 2;
+		padding: 0rem 0rem 1rem 0rem;
 	}
 }
 @media only screen and (max-width: 999px){
-	body {
+	header {
 		padding: 0rem 1rem 0rem 1rem;
 	}
 	article {
-		margin: 0rem 0rem 2rem 0rem;
+		padding: 0rem 1rem 2rem 1rem;
+		background-color: hsla(0, 0%, 0%, 0.5);
+	}
+	footer {
+		padding: 2rem 1rem 0rem 1rem;
 	}
 	.header-container {
 	  display: grid;
@@ -470,13 +495,13 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.home-item-1 {
 		grid-area: 4 / 1 / 5 / 2;
-		text-align: right;
-		margin: 0rem;
+		text-align: center;
+		padding: 1rem 0rem 0rem 0rem;
 	}
 	.home-item-2 {
 		grid-area: 1 / 1 / 2 / 3;
 		text-align: left;
-		padding: 0rem 0rem 6rem 0rem;
+		padding: 0rem;
 	}
 	.home-item-3 {
 		grid-area: 2 / 1 / 3 / 3;
@@ -495,22 +520,25 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.skill-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
-		padding: 0rem 1rem 0rem 2rem;
-		margin: 0rem 0rem 1rem 0rem;
+		padding: 0rem;
+		margin: 0rem;
+		background-color: hsla(0, 0%, 0%, 0);
 	}
 	.skill-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
-		padding: 0rem 1rem 0rem 2rem;
-		margin: 0.5rem 0rem 0.5rem 0rem;
+		padding: 0rem;
+		margin: 0rem;
+		background-color: hsla(0, 0%, 0%, 0);
 	}
 	.skill-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
-		padding: 0rem 1rem 0rem 2rem;
-		margin: 1rem 0rem 0rem 0rem;
+		padding: 0rem;
+		margin: 0rem;
+		background-color: hsla(0, 0%, 0%, 0);
 	}
 	.about-grid {
 		display: grid;
-		grid-template: auto auto auto / 100%;
+		grid-template: auto auto auto auto / 100%;
 		justify-content: center;
 	}
 	.about-item-1 {
@@ -522,6 +550,9 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.about-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
+	}
+	.about-item-4 {
+		grid-area: 4 / 1 / 5 / 2;
 		text-align: center;
 		margin: 0rem;
 		padding: 2rem;
@@ -532,6 +563,8 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.writing-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
+		padding: 0rem;
+
 	}
 	.writing-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
@@ -541,11 +574,11 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.testimonials-grid {
 		display: grid;
-		grid-template: auto auto auto / auto;
+		grid-template: auto auto auto auto / auto;
 	}
 	.testimonials-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
-		padding: 6rem 0rem 0rem 0rem;
+		padding: 0rem;
 	}
 	.testimonials-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
@@ -553,6 +586,10 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.testimonials-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
+		padding: 0rem;
+	}
+	.testimonials-item-4 {
+		grid-area: 4 / 1 / 5 / 2;
 		padding: 0rem;
 	}
 	.nav-container label {
@@ -574,12 +611,14 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.about-background {
 		background-attachment: scroll;
-		background-position: right top;
 	}
 	.writing-background {
 		background-attachment: scroll;
 	}
 	.testimonials-background {
 		background-attachment: scroll;
+	}
+	img[src='./images/dna-icon-small.png'] {
+		width: 100px;
 	}
 }
