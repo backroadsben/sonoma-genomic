@@ -20,7 +20,7 @@ footer {
 }
 h1 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.0rem;
+	font-size: 1rem;
 	letter-spacing: 0.05rem;
 	line-height: 1.5rem;
 	text-align: center;
@@ -139,7 +139,7 @@ img[src='./images/profile.jpg'] {
 	color: hsl(200,50%,30%);
 }
 .large {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 .header-container {
 	display: grid;
@@ -438,6 +438,10 @@ img[src='./images/dna-icon-small.png'] {
 	}
 }
 @media only screen and (max-width: 999px){
+	body {
+		font-size: 1rem;
+		letter-spacing: 0.05rem;
+	}
 	header {
 		padding: 0rem 1rem 0rem 1rem;
 	}
@@ -447,6 +451,12 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	footer {
 		padding: 2rem 1rem 0rem 1rem;
+	}
+	h1 {
+		font-size: 0.8rem;
+	}
+	.large {
+		font-size: 1rem;
 	}
 	.header-container {
 	  display: grid;
