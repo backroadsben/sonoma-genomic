@@ -11,8 +11,8 @@ body {
 }
 h1 {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.2rem;
-	letter-spacing: 0.1rem;
+	font-size: 1.0rem;
+	letter-spacing: 0.05rem;
 	line-height: 1.5rem;
 	text-align: center;
 	color: hsl(200,50%,30%);
@@ -28,14 +28,14 @@ h2 {
 h3 {
 	color: hsl(0,0%,100%);
 	font-family: 'Nunito', sans-serif;
-	font-size: 0.9rem;
+	font-size: 1.0rem;
 	letter-spacing: 0.05rem;
 	line-height: 1.5;
 }
 section {
 	color: hsl(0,0%,100%);
 	font-family: 'Nunito', sans-serif;
-	font-size: 0.9rem;
+	font-size: 1.0rem;
 	letter-spacing: 0.05rem;
 	line-height: 1.5;
 }
@@ -137,7 +137,7 @@ img[src='./images/profile.jpg'] {
 	color: hsl(200,50%,30%);
 }
 .large {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	letter-spacing: 0.1rem;
 }
 .dark {
@@ -152,6 +152,7 @@ img[src='./images/profile.jpg'] {
 }
 .header-item-2 {
 	grid-area: 1 / 2 / 2 / 3;
+	padding: 0.2rem 0rem 0rem 0rem;
 }
 .nav-container {
 	display: flex;
@@ -193,33 +194,33 @@ img[src='./images/profile.jpg'] {
 }
 .home-grid {
 	display: grid;
-	grid-template: auto auto / 15rem auto 15rem;
+	grid-template: auto auto auto / 15rem auto 15rem;
 	justify-content: space-between;
 }
 .home-item-1 {
-	grid-area: 1 / 1 / 3 / 2;
+	grid-area: 1 / 1 / 4 / 2;
 	text-align: center;
 	margin: 0rem;
 }
 .home-item-2 {
 	grid-area: 1 / 2 / 2 / 3;
-	margin: 0rem 0rem 4rem 0rem;
+	padding: 4rem 0rem 0rem 0rem;
 }
 .home-item-3 {
 	grid-area: 2 / 2 / 3 / 3;
-	text-align: center;
 	max-width: 60rem;
-	position: relative;
-}
-.home-item-3 p {
-
 }
 .home-item-4 {
-	grid-area: 1 / 3 / 3 / 4;
+	grid-area: 3 / 2 / 4 / 3;
+	max-width: 60rem;
+	text-align: center;
+}
+.home-item-5 {
+	grid-area: 1 / 3 / 4 / 4;
 }
 .skill-grid {
 	display: grid;
-	grid-template: 10rem 10rem 10rem / auto;
+	grid-template: auto auto auto / auto;
 	justify-content: right;
 	align-content: space-between;
 }
@@ -240,7 +241,7 @@ img[src='./images/profile.jpg'] {
 }
 .about-grid {
 	display: grid;
-	grid-template: auto auto auto / 35% 500px;
+	grid-template: auto auto / 35% 500px;
 	justify-content: center;
 }
 .about-item-1 {
@@ -248,14 +249,10 @@ img[src='./images/profile.jpg'] {
 	margin: 4rem 0rem 0rem 0rem;
 }
 .about-item-2 {
-	grid-area: 2 / 1 / 3 / 3;
-	text-align: center;
+	grid-area: 2 / 1 / 3 / 2;
 }
 .about-item-3 {
-	grid-area: 3 / 1 / 4 / 2;
-}
-.about-item-4 {
-	grid-area: 3 / 2 / 4 / 3;
+	grid-area: 2 / 2 / 3 / 3;
 	text-align: center;
 	margin: 2rem 0rem 0rem 2rem;
 }
@@ -335,23 +332,25 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.home-grid {
 		display: grid;
-		grid-template: auto auto auto / 10rem auto;
+		grid-template: auto auto auto auto / 10rem auto;
 	}
 	.home-item-1 {
-		grid-area: 1 / 1 / 4 / 2;
+		grid-area: 1 / 1 / 5 / 2;
 		margin: 0rem;
 	}
 	.home-item-2 {
 		grid-area: 1 / 2 / 2 / 3;
 		text-align: center;
-		margin: 0rem 0rem 2rem 0rem;
+		padding: 0rem 0rem 2rem 0rem;
 	}
 	.home-item-3 {
 		grid-area: 2 / 2 / 3 / 3;
-		text-align: center;
 	}
 	.home-item-4 {
 		grid-area: 3 / 2 / 4 / 3;
+	}
+	.home-item-5 {
+		grid-area: 4 / 2 / 5 / 3;
 		text-align: left;
 	}
 	.skill-grid {
@@ -372,7 +371,7 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.about-grid {
 		display: grid;
-		grid-template: auto auto auto auto / 70%;
+		grid-template: auto auto auto / 70%;
 		justify-content: right;
 	}
 	.about-item-1 {
@@ -381,13 +380,9 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.about-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
-		text-align: center;
 	}
 	.about-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
-	}
-	.about-item-4 {
-		grid-area: 4 / 1 / 5 / 2;
 		text-align: left;
 		margin: 0rem;
 	}
@@ -420,20 +415,20 @@ img[src='./images/dna-icon-small.png'] {
 		grid-area: 3 / 1 / 4 / 2;
 		padding: 0rem;
 	}
-	img[src='./images/dna-icon-small.png'] {
-		width: 120px;
-	}
 }
 @media only screen and (max-width: 999px){
 	body {
 		padding: 0rem 1rem 0rem 1rem;
 	}
 	article {
-		margin: 2rem 0rem 2rem 0rem;
+		margin: 0rem 0rem 2rem 0rem;
 	}
 	.header-container {
 	  display: grid;
 	  grid-template: auto / auto auto;
+	}
+	.header-item-1 {
+		padding: 0.5rem 0rem 0rem 0rem;
 	}
 	.nav-container {
 	  flex-direction: column;
@@ -470,28 +465,27 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.home-grid {
 		display: grid;
-		grid-template: auto auto auto / 1fr 2fr;
+		grid-template: auto auto auto auto / 1fr 2fr;
 		justify-content: center;
 	}
 	.home-item-1 {
-		grid-area: 3 / 1 / 4 / 2;
+		grid-area: 4 / 1 / 5 / 2;
 		text-align: right;
 		margin: 0rem;
 	}
 	.home-item-2 {
 		grid-area: 1 / 1 / 2 / 3;
 		text-align: left;
-		margin: 2rem 0rem 2rem 0rem;
+		padding: 0rem 0rem 6rem 0rem;
 	}
 	.home-item-3 {
 		grid-area: 2 / 1 / 3 / 3;
-		text-align: center;
-		background-color: hsla(0, 0%, 0%, 0.5);
-		margin: 0rem 0rem 4rem 0rem;
-		padding: 2rem 1rem 0rem 1rem;
 	}
 	.home-item-4 {
-		grid-area: 3 / 2 / 4 / 3;
+		grid-area: 3 / 1 / 4 / 3;
+	}
+	.home-item-5 {
+		grid-area: 4 / 2 / 5 / 3;
 		text-align: left;
 	}
 	.skill-grid {
@@ -516,7 +510,7 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.about-grid {
 		display: grid;
-		grid-template: auto auto auto auto / 100%;
+		grid-template: auto auto auto / 100%;
 		justify-content: center;
 	}
 	.about-item-1 {
@@ -525,13 +519,9 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.about-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
-		text-align: center;
 	}
 	.about-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
-	}
-	.about-item-4 {
-		grid-area: 4 / 1 / 5 / 2;
 		text-align: center;
 		margin: 0rem;
 		padding: 2rem;
@@ -542,7 +532,6 @@ img[src='./images/dna-icon-small.png'] {
 	}
 	.writing-item-1 {
 		grid-area: 1 / 1 / 2 / 2;
-		padding: 6rem 0rem 0rem 0rem;
 	}
 	.writing-item-2 {
 		grid-area: 2 / 1 / 3 / 2;
@@ -566,21 +555,19 @@ img[src='./images/dna-icon-small.png'] {
 		grid-area: 3 / 1 / 4 / 2;
 		padding: 0rem;
 	}
-	img[src='./images/dna-icon-small.png'] {
-		width: 100px;
-	}
 	.nav-container label {
 		display: inline-block;
 		color: black;
 		font-style: normal;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	.nav-item {
-		display: none;
+		position: relative;
+		left: -10000px;
 		padding: 0rem 0rem 1rem 0rem;
 	}
 	.nav-container input:checked ~ .nav-item {
-		display: block;
+		left: 0px;
 	}
 	.home-background {
 		background-attachment: scroll;
