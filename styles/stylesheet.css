@@ -6,6 +6,7 @@ body {
 	font-family: 'Nunito', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1.8;
+	margin: 0;
 }
 header {
 	padding: 0rem 6rem 0rem 6rem;
@@ -450,7 +451,7 @@ img[src='./images/dna-icon-small.png'] {
 		padding: 0rem 1rem 0rem 1rem;
 	}
 	article {
-		margin: 0rem 1rem 0rem 1rem;
+		margin: 0rem;
 		padding: 0rem 1rem 1rem 1rem;
 		background-color: hsla(0, 0%, 0%, 0.5);
 	}
@@ -602,7 +603,7 @@ img[src='./images/dna-icon-small.png'] {
 		display: inline;
 		color: black;
 		font-style: normal;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
 	.nav-item {
 		position: relative;
