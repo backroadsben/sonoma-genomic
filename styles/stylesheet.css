@@ -143,6 +143,9 @@ img[src='./images/profile.jpg'] {
 	color: hsl(200,50%,30%);
 	font-size: 1.2rem;
 }
+.active {
+	color: hsl(37,100%,42%);
+}
 .header-container {
 	display: grid;
 	grid-template: auto / auto auto;
