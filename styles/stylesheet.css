@@ -68,24 +68,24 @@ img[src='./images/profile.jpg'] {
 	max-width: 500px;
 }
 .home-background {
+	background-image: url('../images/home-background.jpg');
 	position: fixed;
  	width: 100%;
  	height: 100%;
  	background-size: cover;
  	background-position:center top;
  	top: 0; right: 0;
- 	z-index: -1000;
- 	background-image: url('../images/home-background.jpg');
+ 	z-index: 1000;
 }
 .about-background {
+	background-image: url('../images/about-background.jpg');
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
 	background-position:center top;
 	top: 0; right: 0;
-	z-index: -1000;
-	background-image: url('../images/about-background.jpg');
+	z-index: 1000;
 }
 .writing-background {
 	background-image: url('../images/writing-background.jpg');
@@ -95,7 +95,7 @@ img[src='./images/profile.jpg'] {
 	background-size: cover;
 	background-position:center top;
 	top: 0; right: 0;
-	z-index: -1000;
+	z-index: 1000;
 }
 .testimonials-background {
 	background-image: url('../images/testimonials-background.jpg');
@@ -105,7 +105,7 @@ img[src='./images/profile.jpg'] {
 	background-size: cover;
 	background-position:center top;
 	top: 0; right: 0;
-	z-index: -1000;
+	z-index: 1000;
 }
 .hidden {
 	position: relative;
@@ -122,16 +122,6 @@ img[src='./images/profile.jpg'] {
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
-}
-.bio-background {
-	background-image: url('../images/bio.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-}
-.contact-background {
-	background-image: url('../images/contact.jpg');
-	background-size: cover;
-	background-attachment: fixed;
 }
 .button {
 	color: 	hsl(0,0%,100%);
