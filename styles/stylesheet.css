@@ -70,7 +70,7 @@ img[src='./images/profile.jpg'] {
 .home-background {
 	background-image: url('../images/home-background.jpg');
 	background-size: cover;
-	-webkit-background-size: cover;
+	-webkit-background-size: scroll;
   -moz-background-size: cover;
   -o-background-size: cover;
 	background-attachment: fixed;
@@ -79,7 +79,7 @@ img[src='./images/profile.jpg'] {
 .about-background {
 	background-image: url('../images/about-background.jpg');
 	background-size: cover;
-	-webkit-background-size: cover;
+	-webkit-background-size: scroll;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-attachment: fixed;
@@ -88,7 +88,7 @@ img[src='./images/profile.jpg'] {
 .writing-background {
 	background-image: url('../images/writing-background.jpg');
 	background-size: cover;
-	-webkit-background-size: cover;
+	-webkit-background-size: scroll;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-attachment: fixed;
@@ -97,7 +97,7 @@ img[src='./images/profile.jpg'] {
 .testimonials-background {
 	background-image: url('../images/testimonials-background.jpg');
 	background-size: cover;
-	-webkit-background-size: cover;
+	-webkit-background-size: scroll;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-attachment: fixed;
@@ -135,7 +135,6 @@ img[src='./images/profile.jpg'] {
 	border-radius: 5px;
 	padding: 0.3rem 1rem 0.3rem 1rem;
 	margin: 0rem 2rem 0rem 2rem;
-	height: 3rem;
 	background-color: hsla(0, 0%, 0%, 0.5);
 	transition: background-color 0.2s;
 }
@@ -175,23 +174,17 @@ img[src='./images/profile.jpg'] {
 	justify-content: space-between;
 }
 .footer-item-1 {
-	grid-area: 1 / 1 / 2 / 2;
+	grid-area: 1 / 2 / 2 / 3;
+	color: hsl(0,0%,100%);
 	text-align: center;
 }
 .footer-item-2 {
-	grid-area: 1 / 2 / 2 / 3;
+	grid-area: 1 / 3 / 2 / 4;
+	color: hsl(0,0%,100%);
 	text-align: center;
 }
 .footer-item-3 {
-	grid-area: 1 / 3 / 2 / 4;
-	text-align: center;
-}
-.footer-item-4 {
 	grid-area: 1 / 4 / 2 / 5;
-	text-align: center;
-}
-.footer-item-5 {
-	grid-area: 1 / 5 / 2 / 6;
 	text-align: center;
 }
 .home-grid {
@@ -335,24 +328,13 @@ img[src='./images/dna-icon-small.png'] {
 		justify-content: space-between;
 	}
 	.footer-item-1 {
-		grid-area: 1 / 1 / 2 / 2;
-		text-align: center;
+		grid-area: 1 / 2 / 2 / 3;
 	}
 	.footer-item-2 {
-		grid-area: 1 / 2 / 2 / 3;
-		text-align: center;
+		grid-area: 1 / 3 / 2 / 4;
 	}
 	.footer-item-3 {
-		grid-area: 1 / 3 / 2 / 4;
-		text-align: center;
-	}
-	.footer-item-4 {
 		grid-area: 1 / 4 / 2 / 5;
-		text-align: center;
-	}
-	.footer-item-5 {
-		grid-area: 1 / 5 / 2 / 6;
-		text-align: center;
 	}
 	.home-grid {
 		display: grid;
@@ -477,27 +459,16 @@ img[src='./images/dna-icon-small.png'] {
 		justify-content: center;
 	}
 	.footer-item-1 {
-		grid-area: 2 / 1 / 3 / 2;
-		text-align: center;
+		grid-area: 1 / 1 / 2 / 2;
+		margin: 1rem 1rem 1rem 1rem;
 	}
 	.footer-item-2 {
-		grid-area: 1 / 1 / 2 / 2;
-		text-align: center;
+		grid-area: 2 / 1 / 3 / 2;
 		margin: 1rem 1rem 1rem 1rem;
 	}
 	.footer-item-3 {
 		grid-area: 3 / 1 / 4 / 2;
-		text-align: center;
 		margin: 1rem 1rem 1rem 1rem;
-	}
-	.footer-item-4 {
-		grid-area: 5 / 1 / 6 / 2;
-		text-align: center;
-		margin: 1rem 1rem 1rem 1rem;
-	}
-	.footer-item-5 {
-		grid-area: 4 / 1 / 5 / 2;
-		text-align: center;
 	}
 	.home-grid {
 		display: grid;
