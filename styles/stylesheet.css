@@ -306,9 +306,6 @@ img[src='./images/dna-icon-small.png'] {
 	footer {
 		padding: 0rem 4rem 4rem 4rem;
 	}
-	.header-container {
-	  grid-template: auto / auto auto;
-	}
 	.drop-down {
 	  flex-direction: row;
 	}
@@ -443,12 +440,8 @@ img[src='./images/dna-icon-small.png'] {
 	section {
 		font-size: 1rem;
 	}
-	.header-container {
-	  display: grid;
-	  grid-template: auto / auto auto;
-	}
 	.logo-container {
-		padding: 0rem 1rem 0rem 1rem;
+		padding: 0rem 0rem 0rem 1rem;
 	}
 	.nav-container label {
 		display: block;
