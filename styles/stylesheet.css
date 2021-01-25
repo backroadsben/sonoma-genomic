@@ -142,7 +142,7 @@ img[src='./images/profile.jpg'] {
 }
 .header-container {
 	display: grid;
-	grid-template: auto / auto auto;
+	grid-template: auto / auto 10rem;
 }
 .logo-container {
 	display: flex;
@@ -456,6 +456,7 @@ img[src='./images/dna-icon-small.png'] {
 		justify-content: flex-start;
 		position: relative;
 		left: -10000px;
+		padding: 0rem 0rem 0rem 1rem;
 	}
 	.nav-item {
 		padding: 0.5rem 1rem 0.5rem 0rem;
